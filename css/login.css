@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    overflow: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+body:before {
+    width: 30vh;
+    height: 30vh;
+    background-color: rgb(19, 8, 59);
+    top: 10vh;
+    left: -10vh;
+}
+
+body:after {
+    width: 60vh;
+    height: 60vh;
+    background-color: rgb(19, 8, 59);
+    bottom: -15vh;
+    right: -15vh;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    width: 75%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ipt-box {
+    width: 75%;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.ipt-box input {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid rgb(218, 231, 255);
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-login {
+    padding: 16px 30px;
+    margin-top: 10px;
+    border: 10px;
+    outline: 10px;
+    background-color: rgb(19, 8, 59);
+    color: rgb(242, 229, 229);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-list {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+}
+
+.text {
+    font-size: 1rem;
+    padding: 0 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #983430;
+}
+
+.tips {
+    text-align: center;
+    margin-top: 2rem;
+}
